@@ -14,14 +14,15 @@ public class Order {
         Integer minutes = Integer.valueOf(deliveryTime.substring(3));
         this.deliveryTime = hour*60 + minutes;
     }
-    public Order(){
+
+    public Order() {
     }
+
+
 
     public String getId() {
         return id;
     }
 
-    public int getDeliveryTime() {
-        return deliveryTime;
-    }
+    public int getDeliveryTime() {return deliveryTime;}
 }
